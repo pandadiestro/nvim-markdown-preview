@@ -31,7 +31,7 @@ function! s:Pandoc.generate(theme, restart) abort
           \ '-o', s:output_path,
           \ '--standalone',
           \ '-t', 'html',
-          \ '--katex=https://cdn.jsdelivr.net/npm/katex@0.16.8/dist',
+          \ '--katex=https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/',
           \ '--highlight-style='.l:highlight,
           \ '--metadata',
           \ 'pagetitle='.filename,
