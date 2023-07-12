@@ -2,6 +2,9 @@
 
 Markdown preview in the browser using [pandoc](https://pandoc.org/) and [live-server](https://github.com/tapio/live-server) through Neovim's [job-control API](https://neovim.io/doc/user/job_control.html).
 
+## Aclaration
+This is a fork of the original project I made since in my end the katex path was becoming "relative" to the live server, when it only exists at a file-system level, I changed the katex path to a jdelivr one as a temporal workaround while I try to find a more "elegant" fix.
+
 ## Usage
 
 Open a markdown file in vim and run `:MarkdownPreview`. The preview opens in a new browser tab which will be reloaded whenever you `:write` the buffer. If you accidentally close your browser tab or want to change the theme just run the command again. The file needs to be written to disk before you can start the preview.
